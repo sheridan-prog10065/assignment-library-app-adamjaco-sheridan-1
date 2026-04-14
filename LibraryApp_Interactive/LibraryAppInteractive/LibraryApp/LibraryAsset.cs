@@ -7,9 +7,16 @@ namespace LibraryAppInteractive;
 public class LibraryAsset
 {
     #region FieldVars
+    //Holds the object of the book
     private Book _book;
+
+    //Holds the ID of the book determined by the library
     private int _libID;
+
+    //Holds the status of the book (ie available, not available, loaned etc)
     private AssetStatus _status;
+
+    //How long the book can be loaned out for
     private LoanPeriod _loanPeriod;
     #endregion
 
@@ -43,8 +50,7 @@ public class LibraryAsset
 
     public bool IsAvailable
     {
-        get { return _status == 1; }
-        set { _status = value; }
+        get { return _status == AssetStatus.Available; }
     }
     #endregion
 }

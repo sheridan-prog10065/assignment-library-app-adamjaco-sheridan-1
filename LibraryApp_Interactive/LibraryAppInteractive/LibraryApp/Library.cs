@@ -12,21 +12,28 @@ namespace LibraryAppInteractive;
 public class Library
 {
     #region fieldvars
-    private List<Book>;
+    //Holds lsit of all books in library
+    private List<Book> _bookList;
+
+    //Holds value of generated library ID
     private int _libIDGeneratorSeed;
+
+    //Tells library to start with this library ID
     const int DEFAULT_LIBID_START = 100;
     #endregion
    
     #region constructors
     public Library()
     {
-
+        _libIDGeneratorSeed = DEFAULT_LIBID_START;
     }
     #endregion
 
     #region methods
     private void CreateDefaultBooks()
     {
+        
+
 
     }
 

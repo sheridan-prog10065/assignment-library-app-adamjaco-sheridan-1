@@ -7,8 +7,13 @@ namespace LibraryAppInteractive;
 public struct LoanPeriod
 {
     #region FieldVars
+    //Date the book was borrowed
     private DateTime _borrowedOn;
+
+    //Date the book was returned
     private DateTime _returnedOn;
+
+    //Date the book is due back
     private DateTime _dueDate;
     #endregion
 
